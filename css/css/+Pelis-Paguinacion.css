@@ -1,0 +1,25 @@
+.paginacion {
+	margin:30px 0px 120px 25em;
+}
+
+.paginacion a {
+	width: 100px;
+	display:inline-grid;
+	grid-template-columns: 100px 100px;
+	padding:10px 20px;
+	color:#fff;
+	background:#451250;
+	text-decoration: none;
+}
+.paginacion a:hover {
+	background:#561d5e;
+}
+.boton1{
+	margin-right: 30px;
+}
+
+.boton1 .boton2{
+	text-align:center;
+	background:#712475;
+	font-weight:bold;
+    font-family: 'Orbitron', sans-serif;;

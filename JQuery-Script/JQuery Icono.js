@@ -1,0 +1,1 @@
+$( "link" ).prepend( document.createTextNode( "<href="img-ico/+Pelis.ico"/>" ) );

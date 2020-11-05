@@ -1,0 +1,95 @@
+body{
+  height: auto;
+
+}    
+     /*ESTILO DE LAS ENTRADAS*/
+
+          /* Descripcion*/ 
+.info{
+  width: 70%;
+  height:500px;
+
+  margin:2cm  150px 0px 150px;
+
+  border-radius: 30px;
+  background-color: ;
+}
+
+.Portada{
+  height: 350px;
+  width: 270px;
+  border: solid 2px;
+  border-color: #A53301;
+  margin: 0 0 0 300px;
+}
+
+
+.info h1{
+  text-transform: ;
+  padding:10px 0 0 200px;
+  color:#A53301;
+}
+
+.info p{
+  font-size: 20px;
+  padding: 0 0 0 50px;
+  color:#AAB7B8;
+}
+
+.info b{
+  font-size:25px;
+}
+
+
+/*Reproductor de videos*/
+
+.reproductor{  
+  margin:8cm  0 5cm 20px;
+
+
+  height: 500px;
+  width: 360px;
+}
+
+.reproductor iframe{
+  margin: auto;
+  height: 500px;
+  width:1200px;
+
+}
+
+.reproductor h1{
+  margin: 15px ;
+  color: #000;
+}
+
+.reproductor p{ 
+  margin: 15px 3px;
+  color: #000;
+  font-size: 20px;
+}
+
+
+
+
+/*estilos de pie de pagina*/
+
+.pie{
+ width: 97%;
+ height:90px;
+
+ position:fixed;
+ bottom:0;
+
+ margin:auto 0px;
+ background:#451250;
+ border-radius:15px 15px 0 0;
+}
+
+
+.pie h5{
+  font-size: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  color:#000000;
+}

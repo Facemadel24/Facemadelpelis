@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>‎A Serbian Film</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img-ico/1.ico"/>
+    <link href="css/+Pelis-entradas.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style-filter+Pelis.css" rel="stylesheet" type="text/css"/>
+ </head>
+
+
+<body>
+
+
+
+
+<header>
+		                <!--BANNER-->
+
+        <img class="banners" src="img-ico/1330x300.png">
+
+
+                       <!--MENU DESPLEGABLE-->
+
+<div id='menuBuscador'>
+<ul class='menusearch'>
+<li class='top'><a class='top_link' href='index.html'><span>Inicio</span></a></li>
+
+ <li class='top'><a class='top_link' href='#'><span class='down'>Genero</span></a>
+<!-- comienso de submenu-->
+<ul class='sub'>
+<li><a href="#"><button class="btn" onclick="filterSelection('all')">Todos</button></a></li>
+<li><a href="#"><button class="btn" onclick="filterSelection('autos')">autos</button></a></li>
+<li><a href="#"><button class="btn" onclick="filterSelection('animales')"> Animales</button></a></li></li>
+<li><a href="#"><button class="btn" onclick="filterSelection('Peliculas')"> Peliculas</button></a></li>
+<li><a href="#"><button class="btn" onclick="filterSelection('colores')"> Colores</button></a></li>
+</ul>
+</li>
+
+
+<li class='top'><a class='top_link' href='#'><span class='down'>Series</span></a>
+</li>
+
+                            <!--Buscador-->
+
+ <form action='/search' id='search' method='get' name='searchForm' style='display:inline;'> 
+<input id='search-box' name='q' onblur='if (this.value == &quot;&quot;) this.value = &quot;Buscar...&quot;;' onfocus='if (this.value == &quot;Buscar...&quot;) this.value = &quot;&quot;;' size='28' type='text' value='Buscar...'/></form>
+</div>
+
+</header>
+
+                <!--Descripcion-->
+
+<div class="info">
+    <h1>‎A Serbian Film</h1>
+<img class="Portada" src="Portadas/A Serbian Film.jpg">
+
+<p><b>Sinopsis:</b>Milos, un ex-actor porno, intenta llevar una vida normal junto a su esposa y su pequeño hijo. Su situación económica no pasa por un buen momento por lo que acepta una repentina propuesta de una ex-compañera, la cual termina por involucrarlo con un peligroso mafioso que le ofrece maravillas para regresar a antiguo trabajo. La diferencia en este caso es que en el transcurso de las grabaciones Milos irá descubriendo que estas involucran actos cada vez más degradantes, lo cual lo llevará a un inevitable conflicto. Milos tendrá que sacrificar todo: su orgullo, su moralidad, su cordura, y tal vez incluso su propia vida.</p>
+
+</div>
+
+
+                <!--estilo del reproductor-->
+
+<div class="reproductor">               
+<iframe title="A Serbian Film" src="https://openload.co/embed/e43qJ_taDv0/A.Serbian.Film-2010.3gp.mp4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<footer class="pie">
+
+          <h5>Derechos de autor Copyright 2019 | Facemadel</h5>
+          
+        </footer>
+</body>
+</html>

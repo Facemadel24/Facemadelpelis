@@ -1,0 +1,308 @@
+    html{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+    	/*background:url("");*/
+    	background-color:#1B2631;
+      width: 100%;
+      height: 0px;
+     } 
+
+     header { 
+          width: 97%;
+          margin: 0px;
+         } 
+
+    .banners{
+          width: 98%;
+          height: auto;
+          border-radius: 20px;
+          margin: 0 0 0 30px;
+    }
+
+                     /* MENU*/
+
+
+    /* Menu desplegable
+------------------------------------------------------------------------------------------------*/
+#menuBuscador {
+position: absolute;
+width: 98%; /* Ancho del menú */
+height: 40px; /*alto del menu*/
+margin-top: 30px;
+padding-left: 14px;
+background: #451250; /* Color de fondo */
+border-radius: 20px 20px 20px 20px; /* Bordes redondeados del submenú */ 
+}
+
+.menusearch {
+padding:0;
+margin:0;
+list-style:none;
+position:relative;
+z-index:5;
+font-family:"Lucida Sans Unicode", "Trebuchet Unicode MS", "Lucida Grande",sans-serif;
+
+}
+.menusearch li:hover li a {
+background:none;
+}
+
+.menusearch li.top {display:block; float:left;}
+
+
+.menusearch li a.top_link {
+display:block;
+float:left;
+height:90px;
+line-height:40px;
+color:#fff; /* Color de los títulos */
+text-decoration:none;
+font-size:14px; /* Tamaño de la fuente */
+padding:0 0 0 12px;
+cursor:pointer; 
+  
+}
+.menusearch li a.top_link span {
+float:left;
+display:block;
+padding:0 24px 0 12px;
+height:40px;
+  
+}
+.menusearch li a.top_link span.down{
+float:left;
+display:block;
+padding:0 24px 0 12px;
+height:40px;  
+}
+ 
+
+.menusearch li a.top_link:hover, .menusearch li:hover > a.top_link {color:#fff;}
+.menusearch li:hover {position:relative; z-index:2;}
+.menusearch ul, 
+.menusearch li:hover ul ul,
+.menusearch li:hover ul li:hover ul ul,
+.menusearch li:hover ul li:hover ul li:hover ul ul,
+.menusearch li:hover ul li:hover ul li:hover ul li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+
+/*Estilos del submenu GENEROS*/
+.menusearch li:hover ul.sub {
+left:0;
+top:40px;
+background:none; /* Color de fondo del submenú */
+padding:3px;
+white-space:nowrap;
+width:200px;
+height:auto;
+margin: 0 0 0 50px;
+z-index:3;
+  
+}
+.menusearch li:hover ul.sub li {
+display:block;
+height:30px;
+position:relative;
+float:right;
+width:200px;
+font-weight:normal;
+
+}
+.menusearch li:hover ul.sub li a{
+display:block;
+height:30px;
+width:200px;
+line-height:30px;
+text-indent:5px;
+color:#fff;
+font-size:14px;
+text-decoration:none; 
+}
+
+
+.menusearch li ul.sub li a.fly {
+/* Color de fondo del submenú */
+background:# url(https://lh4.googleusercontent.com/_dsEG33PDaHw/TZ0rcSPpqlI/AAAAAAAABSc/RseHiYluzAM/arrow_over.gif) 185px 10px no-repeat;}
+.menusearch li:hover ul.sub li a:hover {
+background:#; /* Color de fondo al pasar el cursor*/
+color:#fff;
+}
+
+
+.menusearch li:hover ul.sub li a.fly:hover, .menusearch li:hover ul li:hover > a.fly {
+/* Color de fondo al pasar el cursor */
+background:#CC2A41 url(https://lh4.googleusercontent.com/_dsEG33PDaHw/TZ0rcSPpqlI/AAAAAAAABSc/RseHiYluzAM/arrow_over.gif) 185px 10px no-repeat; color:#fff;}
+
+.menusearch li:hover ul li:hover ul,
+.menusearch li:hover ul li:hover ul li:hover ul,
+.menusearch li:hover ul li:hover ul li:hover ul li:hover ul,
+.menusearch li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul {
+left:200px;
+top:-4px;
+background: #; /* Color de fondo del submenú*/
+padding:3px;
+white-space:nowrap;
+width:200px;
+z-index:4;
+height:auto;
+}
+/*----------------------------------------------------------*/
+                    /*estilos del buscador*/
+            
+#search input[type="text"] {
+background: #fff;  /*url(data:image/png;base64,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) no-repeat center left;*/
+position: absolute;
+right:; /* Distancia del buscador desde la derecha */
+outline:none;
+font-size: 13px; /* Tamaño de la fuente del buscador */
+color: #ccc;
+width: 0;
+margin: 0 0 0 0px;
+padding: 7px 0 8px 20px;
+z-index: 1000;
+border: 5px solid #fff;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+
+}
+#search input[type="text"]:hover, #search input[type="text"]:focus {width:35%} /* Ancho del buscador cuando se expande */
+
+
+
+
+/* Fin Menu desplegable
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*CSS3 galeria de imagenes*/
+.container{
+ height: auto;  
+ width: auto;
+ margin:auto 10px;
+ padding:0;
+ position: relative;
+}
+
+.container img{
+  padding: 0 2 0 0px;
+  height: 200px;
+  width:150px;
+  border: 2px solid #460D8D;
+  border-radius: 12px;
+}
+
+
+/*estilos de pie de pagina*/
+
+.pie{
+ width: 96%;
+ height:90px;
+
+ position:fixed;
+ bottom:0;
+
+ margin:2px 0;
+ background:#451250;
+ border-radius:15px;
+}
+
+
+.pie p{
+  font-size: 15px;
+  margin-bottom: 100px;
+  padding: 15px 0;
+  text-align: center;
+  color:#FFF;
+}
+
+
+         /*ESTILO DE LAS ENTRADAS*/
+          /* Descripcion*/ 
+          /*
+.info{
+  width: 70%;
+  height:55em;
+
+  margin:2cm 150px;
+
+  border-radius: 30px;
+  background-color: ;
+}
+
+.Portada{
+  height: 350px;
+  width: 270px;
+  border: solid 2px;
+  border-color: #A53301;
+  margin: 0 0 0 500px;
+}
+
+
+.info h1{
+  text-transform: ;
+  padding:10px 0 0 300px;
+  color:#A53301;
+}
+
+.info p{
+  font-size: 15px;
+  padding: 0 0 0 50px;
+  color:#AAB7B8;
+}
+
+.info b{
+  font-size:18px;
+}
+
+*/
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Para pantallas menores reducimos el campo de busqueda y hacemos que se despliegue cuando hacemos focus sobre el icono de la lupa. La busqueda se ejecuta con intro o pinchando de nuevo en el icono de la lupa */
+@media (max-width: 1200px){ 
+
+    }
+    .navbar-form .form-control[type=text] {
+        width:40px;
+        position:absolute;
+        right:0px;
+        z-index:1000;
+        padding:8px 12px;
+        cursor:pointer;
+    }
+
+    .navbar-form div.input-group {
+        width:40px;
+        height:40px;
+    }
+    .navbar-form .form-control[type=text]:focus {
+        position:absolute;
+        right:40px;
+        width:250px;
+    }
+    
+
+/* Para pantallas de smartphones ajustamos el ancho del campo de busqueda */
+@media only screen and (max-width: 600px){ 
+    
+    .banners{
+      height: 200px;
+    }
+    .navbar-form .form-control[type=text]:focus {
+        width:150px;
+}
+
+}
+
+

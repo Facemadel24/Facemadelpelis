@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Boogie el Aceitoso</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img-ico/1.ico"/>
+    <link href="css/+Pelis-entradas.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style-filter+Pelis.css" rel="stylesheet" type="text/css"/>
+ </head>
+
+
+<body>
+
+
+
+
+<header>
+		                <!--BANNER-->
+
+        <img class="banners" src="img-ico/1330x300.png">
+
+
+                       <!--MENU DESPLEGABLE-->
+
+<div id='menuBuscador'>
+<ul class='menusearch'>
+<li class='top'><a class='top_link' href='index.html'><span>Inicio</span></a></li>
+
+ <li class='top'><a class='top_link' href='#'><span class='down'>Genero</span></a>
+<!-- comienso de submenu-->
+<ul class='sub'>
+<li><a href="#"><button class="btn" onclick="filterSelection('all')">Todos</button></a></li></li>
+<li><a href="#"><button class="btn" onclick="filterSelection('autos')">autos</button></a></li></li></li>
+<li><a href="#"><button class="btn" onclick="filterSelection('Peliculas')"> Peliculas</button></a></li>
+<li><a href="#"><button class="btn" onclick="filterSelection('colores')"> Colores</button></a></li>
+</ul>
+</li>
+
+
+<li class='top'><a class='top_link' href='#'><span class='down'>Series</span></a>
+</li>
+
+                            <!--Buscador-->
+
+ <form action='/search' id='search' method='get' name='searchForm' style='display:inline;'> 
+<input id='search-box' name='q' onblur='if (this.value == &quot;&quot;) this.value = &quot;Buscar...&quot;;' onfocus='if (this.value == &quot;Buscar...&quot;) this.value = &quot;&quot;;' size='28' type='text' value='Buscar...'/></form>
+</div>
+
+</header>
+
+                <!--Descripcion-->
+
+<div class="info">
+    <h1>Boogie el Aceitoso</h1>
+<img class="Portada" src="Portadas/Boogie el aceitoso.jpg">
+
+<p><b>Sinopsis:</b>Boogie el Aceitoso es el mejor asesino a sueldo de la ciudad, por lo menos es lo que el cree... Cuando el mafioso mas importante necesita eliminar a un testigo le encarga el trabajo a Blackburn, quien de a poco esta desplazando a Boogie. Cuando Boogie se entera de esto sale a demostrar que el sigue siendo el numero uno.</p>
+
+</div>
+
+
+                <!--estilo del reproductor-->
+
+<div class="reproductor">               
+<iframe title="Boogie el Aceitoso" src="https://www.fembed.com/v/3q91mnpg29y" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<footer class="pie">
+
+          <h5>Derechos de autor Copyright 2019 | Facemadel</h5>
+          
+        </footer>
+</body>
+</html>

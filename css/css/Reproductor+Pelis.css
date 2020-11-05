@@ -1,0 +1,27 @@
+/*Reproductor de videos*/
+
+.reproductor{  
+  margin: 0px 300px 100px 30px;
+
+
+  height: 515px;
+  width: 360px;
+}
+
+.reproductor iframe{
+  margin: 100px auto;
+  height: 500px;
+  width: 1200px;
+
+}
+
+.reproductor h1{
+  margin: 15px 3px;
+  color: #000;
+}
+
+.reproductor p{ 
+  margin: 15px 3px;
+  color: #000;
+  font-size: 20px;
+}
